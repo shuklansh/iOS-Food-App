@@ -17,6 +17,8 @@
 		1B071C732BE77EEB002543D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C722BE77EEB002543D1 /* HomeView.swift */; };
 		1B071C752BE77EFE002543D1 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C742BE77EFE002543D1 /* AccountView.swift */; };
 		1B071C772BE77F13002543D1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C762BE77F13002543D1 /* OrderView.swift */; };
+		1B071C7C2BE79860002543D1 /* Appetizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C7B2BE79860002543D1 /* Appetizers.swift */; };
+		1B071C7F2BE7AA1C002543D1 /* HomeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C7E2BE7AA1C002543D1 /* HomeListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1B071C722BE77EEB002543D1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1B071C742BE77EFE002543D1 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		1B071C762BE77F13002543D1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		1B071C7B2BE79860002543D1 /* Appetizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizers.swift; sourceTree = "<group>"; };
+		1B071C7E2BE7AA1C002543D1 /* HomeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,10 @@
 		1B071C452BE77BA7002543D1 /* iOS Food App */ = {
 			isa = PBXGroup;
 			children = (
+				1B071C7A2BE7984D002543D1 /* Data Models */,
 				1B071C712BE77EC2002543D1 /* AppetizerViews */,
-				1B071C462BE77BA7002543D1 /* iOS_Food_AppApp.swift */,
 				1B071C482BE77BA7002543D1 /* FoodAppTabView.swift */,
+				1B071C462BE77BA7002543D1 /* iOS_Food_AppApp.swift */,
 				1B071C4A2BE77BAD002543D1 /* Assets.xcassets */,
 				1B071C4C2BE77BAE002543D1 /* iOS_Food_App.entitlements */,
 				1B071C4D2BE77BAE002543D1 /* Preview Content */,
@@ -139,11 +144,36 @@
 		1B071C712BE77EC2002543D1 /* AppetizerViews */ = {
 			isa = PBXGroup;
 			children = (
+				1B071C7D2BE7A9EE002543D1 /* HomeTabViews */,
+				1B071C782BE790CD002543D1 /* TabViews */,
+			);
+			path = AppetizerViews;
+			sourceTree = "<group>";
+		};
+		1B071C782BE790CD002543D1 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
 				1B071C722BE77EEB002543D1 /* HomeView.swift */,
 				1B071C742BE77EFE002543D1 /* AccountView.swift */,
 				1B071C762BE77F13002543D1 /* OrderView.swift */,
 			);
-			path = AppetizerViews;
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		1B071C7A2BE7984D002543D1 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B071C7B2BE79860002543D1 /* Appetizers.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		1B071C7D2BE7A9EE002543D1 /* HomeTabViews */ = {
+			isa = PBXGroup;
+			children = (
+				1B071C7E2BE7AA1C002543D1 /* HomeListItemView.swift */,
+			);
+			path = HomeTabViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,9 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B071C752BE77EFE002543D1 /* AccountView.swift in Sources */,
+				1B071C7F2BE7AA1C002543D1 /* HomeListItemView.swift in Sources */,
 				1B071C732BE77EEB002543D1 /* HomeView.swift in Sources */,
 				1B071C492BE77BA7002543D1 /* FoodAppTabView.swift in Sources */,
 				1B071C472BE77BA7002543D1 /* iOS_Food_AppApp.swift in Sources */,
+				1B071C7C2BE79860002543D1 /* Appetizers.swift in Sources */,
 				1B071C772BE77F13002543D1 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

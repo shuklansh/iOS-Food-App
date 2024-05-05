@@ -26,7 +26,7 @@ struct FoodAppTabView: View {
                     Text("Order")
                 }
         }
-        .accentColor(.orange)
+        .accentColor(.primary)
         .onAppear {
             UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance()
         }

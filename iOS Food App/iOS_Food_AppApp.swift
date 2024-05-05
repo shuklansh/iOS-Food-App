@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-@main
-struct iOS_Food_AppApp: App {
+@main // entry point for app (similar to appDelegate/sceneDelegate in uiKit) n
+struct iOS_Food_AppApp: App { // App -> scene representing the content of the app (scene -> allows multiple windows/splitScreens)
     var body: some Scene {
         WindowGroup {
             FoodAppTabView()
