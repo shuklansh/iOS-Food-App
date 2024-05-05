@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1B071C472BE77BA7002543D1 /* iOS_Food_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C462BE77BA7002543D1 /* iOS_Food_AppApp.swift */; };
-		1B071C492BE77BA7002543D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C482BE77BA7002543D1 /* ContentView.swift */; };
+		1B071C492BE77BA7002543D1 /* FoodAppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C482BE77BA7002543D1 /* FoodAppTabView.swift */; };
 		1B071C4B2BE77BAD002543D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B071C4A2BE77BAD002543D1 /* Assets.xcassets */; };
 		1B071C4F2BE77BAE002543D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B071C4E2BE77BAE002543D1 /* Preview Assets.xcassets */; };
 		1B071C592BE77BAE002543D1 /* iOS_Food_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C582BE77BAE002543D1 /* iOS_Food_AppTests.swift */; };
 		1B071C632BE77BAE002543D1 /* iOS_Food_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C622BE77BAE002543D1 /* iOS_Food_AppUITests.swift */; };
 		1B071C652BE77BAE002543D1 /* iOS_Food_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C642BE77BAE002543D1 /* iOS_Food_AppUITestsLaunchTests.swift */; };
+		1B071C732BE77EEB002543D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C722BE77EEB002543D1 /* HomeView.swift */; };
+		1B071C752BE77EFE002543D1 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C742BE77EFE002543D1 /* AccountView.swift */; };
+		1B071C772BE77F13002543D1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C762BE77F13002543D1 /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		1B071C432BE77BA7002543D1 /* iOS Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B071C462BE77BA7002543D1 /* iOS_Food_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Food_AppApp.swift; sourceTree = "<group>"; };
-		1B071C482BE77BA7002543D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B071C482BE77BA7002543D1 /* FoodAppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppTabView.swift; sourceTree = "<group>"; };
 		1B071C4A2BE77BAD002543D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B071C4C2BE77BAE002543D1 /* iOS_Food_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS_Food_App.entitlements; sourceTree = "<group>"; };
 		1B071C4E2BE77BAE002543D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +48,9 @@
 		1B071C5E2BE77BAE002543D1 /* iOS Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B071C622BE77BAE002543D1 /* iOS_Food_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Food_AppUITests.swift; sourceTree = "<group>"; };
 		1B071C642BE77BAE002543D1 /* iOS_Food_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Food_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B071C722BE77EEB002543D1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1B071C742BE77EFE002543D1 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		1B071C762BE77F13002543D1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,9 @@
 		1B071C452BE77BA7002543D1 /* iOS Food App */ = {
 			isa = PBXGroup;
 			children = (
+				1B071C712BE77EC2002543D1 /* AppetizerViews */,
 				1B071C462BE77BA7002543D1 /* iOS_Food_AppApp.swift */,
-				1B071C482BE77BA7002543D1 /* ContentView.swift */,
+				1B071C482BE77BA7002543D1 /* FoodAppTabView.swift */,
 				1B071C4A2BE77BAD002543D1 /* Assets.xcassets */,
 				1B071C4C2BE77BAE002543D1 /* iOS_Food_App.entitlements */,
 				1B071C4D2BE77BAE002543D1 /* Preview Content */,
@@ -127,6 +134,16 @@
 				1B071C642BE77BAE002543D1 /* iOS_Food_AppUITestsLaunchTests.swift */,
 			);
 			path = "iOS Food AppUITests";
+			sourceTree = "<group>";
+		};
+		1B071C712BE77EC2002543D1 /* AppetizerViews */ = {
+			isa = PBXGroup;
+			children = (
+				1B071C722BE77EEB002543D1 /* HomeView.swift */,
+				1B071C742BE77EFE002543D1 /* AccountView.swift */,
+				1B071C762BE77F13002543D1 /* OrderView.swift */,
+			);
+			path = AppetizerViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B071C492BE77BA7002543D1 /* ContentView.swift in Sources */,
+				1B071C752BE77EFE002543D1 /* AccountView.swift in Sources */,
+				1B071C732BE77EEB002543D1 /* HomeView.swift in Sources */,
+				1B071C492BE77BA7002543D1 /* FoodAppTabView.swift in Sources */,
 				1B071C472BE77BA7002543D1 /* iOS_Food_AppApp.swift in Sources */,
+				1B071C772BE77F13002543D1 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
