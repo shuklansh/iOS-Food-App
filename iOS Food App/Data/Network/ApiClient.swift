@@ -10,7 +10,7 @@ import Foundation
 class ApiClient {
     private let baseUrl = URL(string:"https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/")!
     
-    func getAppetizersData() async throws -> [Appetizer] {
+    func getAppetizersData() async throws -> AppetizerResponse {
         let networkCallUrl = baseUrl.appending(path:"appetizers")
         let urlComponent = URLComponents(url: networkCallUrl, resolvingAgainstBaseURL: true)
         
@@ -24,8 +24,7 @@ class ApiClient {
             throw NetworkError.FetchError
         }
         
-        let decoder = JSONDecoder()
-        let output = try decoder.decode([Appetizer].self , from: data)
+        let output = try JSONDecoder().decode(AppetizerResponse.self, from: data)
         return output
     }
 }

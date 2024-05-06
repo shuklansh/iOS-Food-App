@@ -22,6 +22,7 @@
 		1B071C832BE922C9002543D1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C822BE922C9002543D1 /* ApiClient.swift */; };
 		1B071C862BE923EC002543D1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C852BE923EC002543D1 /* Errors.swift */; };
 		1B071C8A2BE928DA002543D1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C892BE928DA002543D1 /* ViewModel.swift */; };
+		1B071C8C2BE9450C002543D1 /* DetailedAppetizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C8B2BE9450C002543D1 /* DetailedAppetizerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		1B071C822BE922C9002543D1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		1B071C852BE923EC002543D1 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		1B071C892BE928DA002543D1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1B071C8B2BE9450C002543D1 /* DetailedAppetizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAppetizerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,8 @@
 		1B071C452BE77BA7002543D1 /* iOS Food App */ = {
 			isa = PBXGroup;
 			children = (
-				1B071C482BE77BA7002543D1 /* FoodAppTabView.swift */,
 				1B071C462BE77BA7002543D1 /* iOS_Food_AppApp.swift */,
+				1B071C482BE77BA7002543D1 /* FoodAppTabView.swift */,
 				1B071C782BE790CD002543D1 /* TabViews */,
 				1B071C712BE77EC2002543D1 /* AppetizerViews */,
 				1B071C872BE927A5002543D1 /* Presentation */,
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				1B071C7E2BE7AA1C002543D1 /* HomeListItemView.swift */,
+				1B071C8B2BE9450C002543D1 /* DetailedAppetizerView.swift */,
 			);
 			path = HomeTabViews;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B071C8A2BE928DA002543D1 /* ViewModel.swift in Sources */,
+				1B071C8C2BE9450C002543D1 /* DetailedAppetizerView.swift in Sources */,
 				1B071C752BE77EFE002543D1 /* AccountView.swift in Sources */,
 				1B071C7F2BE7AA1C002543D1 /* HomeListItemView.swift in Sources */,
 				1B071C732BE77EEB002543D1 /* HomeView.swift in Sources */,

@@ -11,7 +11,7 @@ struct HomeListItemView: View {
     var item: Appetizer
     var body: some View {
         HStack {
-            AsyncImage(url: item.imageUrl, content: {
+            AsyncImage(url: item.imageURL, content: {
                 image in image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -24,13 +24,8 @@ struct HomeListItemView: View {
                 Text(item.name)
                     .font(.title3)
                     .fontWeight(.medium)
-                Text("Rs. \(item.price, specifier: "%.f")")
+                Text("$\(item.price, specifier: "%.2f")")
                     .foregroundColor(.gray)
-            }.padding(.leading)
-            VStack(alignment: .leading) {
-                Text("calories : \(item.calories) gm")
-                Text("protein : \(item.protein) gm")
-                Text("carbs : \(item.carbs) gm")
             }.padding(.leading)
         }
     }
