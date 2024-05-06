@@ -26,11 +26,11 @@ struct FoodAppTabView: View {
                     Text("Order")
                 }
         }
+        .preferredColorScheme(.dark)
         .accentColor(.primary)
         .onAppear {
             UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance()
         }
-        .preferredColorScheme(.dark)
     }
 }
   #Preview {

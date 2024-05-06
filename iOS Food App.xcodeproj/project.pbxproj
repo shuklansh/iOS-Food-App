@@ -19,6 +19,9 @@
 		1B071C772BE77F13002543D1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C762BE77F13002543D1 /* OrderView.swift */; };
 		1B071C7C2BE79860002543D1 /* Appetizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C7B2BE79860002543D1 /* Appetizers.swift */; };
 		1B071C7F2BE7AA1C002543D1 /* HomeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C7E2BE7AA1C002543D1 /* HomeListItemView.swift */; };
+		1B071C832BE922C9002543D1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C822BE922C9002543D1 /* ApiClient.swift */; };
+		1B071C862BE923EC002543D1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C852BE923EC002543D1 /* Errors.swift */; };
+		1B071C8A2BE928DA002543D1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B071C892BE928DA002543D1 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		1B071C762BE77F13002543D1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		1B071C7B2BE79860002543D1 /* Appetizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizers.swift; sourceTree = "<group>"; };
 		1B071C7E2BE7AA1C002543D1 /* HomeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListItemView.swift; sourceTree = "<group>"; };
+		1B071C822BE922C9002543D1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		1B071C852BE923EC002543D1 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		1B071C892BE928DA002543D1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +111,12 @@
 		1B071C452BE77BA7002543D1 /* iOS Food App */ = {
 			isa = PBXGroup;
 			children = (
-				1B071C7A2BE7984D002543D1 /* Data Models */,
-				1B071C712BE77EC2002543D1 /* AppetizerViews */,
 				1B071C482BE77BA7002543D1 /* FoodAppTabView.swift */,
 				1B071C462BE77BA7002543D1 /* iOS_Food_AppApp.swift */,
+				1B071C782BE790CD002543D1 /* TabViews */,
+				1B071C712BE77EC2002543D1 /* AppetizerViews */,
+				1B071C872BE927A5002543D1 /* Presentation */,
+				1B071C802BE92297002543D1 /* Data */,
 				1B071C4A2BE77BAD002543D1 /* Assets.xcassets */,
 				1B071C4C2BE77BAE002543D1 /* iOS_Food_App.entitlements */,
 				1B071C4D2BE77BAE002543D1 /* Preview Content */,
@@ -145,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				1B071C7D2BE7A9EE002543D1 /* HomeTabViews */,
-				1B071C782BE790CD002543D1 /* TabViews */,
 			);
 			path = AppetizerViews;
 			sourceTree = "<group>";
@@ -174,6 +181,40 @@
 				1B071C7E2BE7AA1C002543D1 /* HomeListItemView.swift */,
 			);
 			path = HomeTabViews;
+			sourceTree = "<group>";
+		};
+		1B071C802BE92297002543D1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1B071C7A2BE7984D002543D1 /* Data Models */,
+				1B071C842BE922E0002543D1 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1B071C842BE922E0002543D1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1B071C822BE922C9002543D1 /* ApiClient.swift */,
+				1B071C852BE923EC002543D1 /* Errors.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1B071C872BE927A5002543D1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1B071C882BE927B3002543D1 /* Viewmodel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1B071C882BE927B3002543D1 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				1B071C892BE928DA002543D1 /* ViewModel.swift */,
+			);
+			path = Viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,12 +347,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B071C8A2BE928DA002543D1 /* ViewModel.swift in Sources */,
 				1B071C752BE77EFE002543D1 /* AccountView.swift in Sources */,
 				1B071C7F2BE7AA1C002543D1 /* HomeListItemView.swift in Sources */,
 				1B071C732BE77EEB002543D1 /* HomeView.swift in Sources */,
+				1B071C832BE922C9002543D1 /* ApiClient.swift in Sources */,
 				1B071C492BE77BA7002543D1 /* FoodAppTabView.swift in Sources */,
 				1B071C472BE77BA7002543D1 /* iOS_Food_AppApp.swift in Sources */,
 				1B071C7C2BE79860002543D1 /* Appetizers.swift in Sources */,
+				1B071C862BE923EC002543D1 /* Errors.swift in Sources */,
 				1B071C772BE77F13002543D1 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
